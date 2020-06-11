@@ -31,6 +31,7 @@ class ToDoController {
         }
 
         todo.boolean = !todo.boolean;
+        
         todo.save(e => {
             if (e) {
                 return res.sendStatus(400);
